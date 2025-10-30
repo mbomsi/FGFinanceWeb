@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deposit Accounts | FG FINANCE Cooperative</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root {
+    --primary: #003366;
+    --accent: #1db954;
+    --light: #f9fafc;
+    --text: #333;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--accent);
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+
+  .accordion {
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .accordion-item {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+  }
+
+  .accordion-header:hover {
+    background: #f1f1f1;
+  }
+
+  .accordion-header::after {
+    content: '+';
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+  }
+
+  .accordion-header.active::after {
+    content: '-';
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #f9f9f9;
+  }
+
+  .accordion-content p {
+    padding: 15px 0;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  footer {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">FG FINANCE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="depaccount.html">Deposit Accounts</a>
+    <a href="credit.html">Credit Facilities</a>
+    <a href="current.html">Current Accounts</a>
+    <a href="adhoc.html">ADHOC Services</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Deposit Accounts</h1>
+  <p>Save smart, earn more — explore our flexible deposit options designed for your financial growth.</p>
+</section>
+
+<section class="services">
+  <h2>Our Deposit Account Types</h2>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">🏠 Fixed Deposit Account</div>
+      <div class="accordion-content">
+        <p>Deposit a lump sum for a fixed term to earn higher interest rates. Ideal for members saving for future goals with guaranteed returns.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">🎓 Students Saving Account</div>
+      <div class="accordion-content">
+        <p>A dedicated account for students to develop good saving habits, with flexible deposits and easy access to funds.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">💵 Ordinary Savings Account</div>
+      <div class="accordion-content">
+        <p>A general savings account for individuals looking for a safe and flexible way to grow their money with competitive interest.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">💼 Corporate Savings Account</div>
+      <div class="accordion-content">
+        <p>Designed for businesses to manage their operational funds efficiently while earning returns. Ideal for corporate clients seeking reliability and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 FG FINANCE Cooperative Credit Union</p>
+  <p><a href="index.html">← Back to Home</a></p>
+</footer>
+
+<script>
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+      if (header.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "15px 20px";
+      } else {
+        content.style.maxHeight = null;
+        content.style.padding = "0 20px";
+      }
+    });
+  });
+</script>
+</body>
+</html>

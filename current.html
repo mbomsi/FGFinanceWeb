@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Current Accounts | FG FINANCE Cooperative</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root {
+    --primary: #003366;
+    --accent: #1db954;
+    --light: #f9fafc;
+    --text: #333;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--accent);
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("https://images.unsplash.com/photo-1605902711622-cfb43c4437d3?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+
+  .intro {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .comparison-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+  }
+
+  .account-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .account-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+
+  .account-card h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .account-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  .account-card .icon {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+  }
+
+  footer {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">FG FINANCE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="depaccount.html">Deposit Accounts</a>
+    <a href="credit.html">Credit Facilities</a>
+    <a href="current.html">Current Accounts</a>
+    <a href="adhoc.html">ADHOC Services</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Current Accounts</h1>
+  <p>Manage your daily financial activities with flexibility and convenience — our current accounts are designed to suit individuals, businesses, and groups alike.</p>
+</section>
+
+<section class="intro">
+  <p>
+    FG FINANCE current accounts provide easy access to your funds while allowing seamless business and personal transactions. 
+    Choose the account type that best aligns with your financial activities and enjoy our reliable, transparent, and efficient service.
+  </p>
+</section>
+
+<section class="comparison-table">
+  <div class="account-card">
+    <div class="icon">💼</div>
+    <h3>Salary Account</h3>
+    <p>
+      Simplify salary payments with a dedicated account for employees. 
+      Enjoy instant access to funds, zero maintenance charges, and seamless payroll processing.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🏢</div>
+    <h3>Corporate Business Account</h3>
+    <p>
+      Tailored for companies and organizations, offering high transaction limits, bulk payments, and dedicated account management for smooth operations.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🧍‍♂️</div>
+    <h3>Individual Business Account</h3>
+    <p>
+      Perfect for entrepreneurs and self-employed individuals. 
+      Manage business inflows and outflows efficiently with transparent transaction records.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🤝</div>
+    <h3>Group Account</h3>
+    <p>
+      Designed for groups, associations, and cooperatives to manage shared finances with collective access and accountability features.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 FG FINANCE Cooperative Credit Union</p>
+  <p><a href="index.html">← Back to Home</a></p>
+</footer>
+</body>
+</html>

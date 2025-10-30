@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ADHOC Services | FG FINANCE Cooperative</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root {
+    --primary: #003366;
+    --accent: #1db954;
+    --light: #f9fafc;
+    --text: #333;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+  }
+
+  /* Header */
+  header {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--accent);
+  }
+
+  /* Hero section */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("https://images.unsplash.com/photo-1561414927-6d86591d0c4f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+
+  /* Scrollable cards section */
+  .services {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .services h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 30px;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+  }
+
+  .card {
+    flex: 0 0 280px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    scroll-snap-align: start;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+
+  .card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">FG FINANCE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="depaccount.html">Deposit Accounts</a>
+    <a href="credit.html">Credit Facilities</a>
+    <a href="current.html">Current Accounts</a>
+    <a href="adhoc.html">ADHOC Services</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>ADHOC Services</h1>
+  <p>Discover our range of specialized financial services designed to make banking more flexible, personal, and digital for all our members.</p>
+</section>
+
+<section class="services">
+  <h2>Our ADHOC Offerings</h2>
+  <div class="scroll-container">
+
+    <div class="card">
+      <div class="icon">💸</div>
+      <h3>Money Transfer</h3>
+      <p>Fast and secure local and international money transfer services — helping you send and receive funds effortlessly anywhere, anytime.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🧾</div>
+      <h3>Daily Collections</h3>
+      <p>Authorized FGFCULL agents handle safe and reliable daily cash collections from traders and members for added convenience.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Mobile Investment Plans</h3>
+      <p>Invest and track your returns directly from your phone with our digital investment platform tailored for all income levels.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Insurance Packages</h3>
+      <p>Comprehensive coverage options for health, assets, and life — ensuring peace of mind for you and your loved ones.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💼</div>
+      <h3>Digital Wallet</h3>
+      <p>Manage your funds easily through our digital wallet — perfect for quick payments, transfers, and account top-ups on the go.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Financial Advisory</h3>
+      <p>Expert guidance from our financial advisors to help you make smart investment decisions and reach your financial goals faster.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 FG FINANCE Cooperative Credit Union</p>
+  <p><a href="index.html">← Back to Home</a></p>
+</footer>
+
+</body>
+</html>
