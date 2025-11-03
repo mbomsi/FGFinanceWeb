@@ -1,9 +1,13 @@
-/* ---------- Reset ---------- */
+/* --- GLOBAL RESET & FONT (Text Wrap Added Here) --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
+  /* FIX: Essential for preventing horizontal scroll due to long words/URLs */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word; /* Use break-word for broader compatibility */
 }
 
 /* ---------- Colors ---------- */
@@ -12,6 +16,12 @@
   --accent: #1db954;
   --light: #f4f4f4;
   --text: #333;
+}
+
+/* --- ESSENTIAL FIXES FOR IMAGES --- */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* ---------- Header ---------- */
@@ -31,7 +41,6 @@ header {
 header .logo {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 nav {
@@ -61,6 +70,19 @@ nav a:hover {
 }
 
 .hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Update the Hero section styling */
+.hero h2 {
+  /* Set color to white (#fff) */
+  color: #fff; 
+  
+  /* Set font weight to bold (700 is standard bold) */
+  font-weight: bold; 
+  
+  /* Keep your original sizing */
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -177,82 +199,120 @@ h2 {
 }
 
 /* ---------- Footer ---------- */
-/*footer {
+footer {
   background: var(--primary);
   color: #fff;
-  padding: 2rem 1rem;
+  /* Reduced vertical and horizontal padding for a smaller footer */
+  padding: 0.75rem 0.5rem; 
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.9rem; /* Slightly smaller text size */
 }
 
-/* Contact Info */
-
-/* Social Icons */
-/*.socials {
-  margin: 0.5rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+/* Tighten up margins on text elements inside the footer */
+footer p {
+    margin: 0.2rem 0; 
 }
 
+/* Social Media Icons */
+/* --- Social Media Styling for Font Awesome Icons --- */
+footer .socials {
+    margin: 0.5rem 0; /* Add a bit more vertical margin for visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between icons */
+    font-size: 1.2rem; /* Size up the icons a bit */
+}
+
+footer .socials a {
+    color: #fff; /* White icon color */
+    transition: color 0.3s;
+}
+
+footer .socials a:hover {
+    color: var(--accent);
+}
+
+/* Style for the company handle text */
+.socials .social-handle {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px; /* Space between the last icon and the handle */
+    padding-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5); /* A clean separator line */
+}
+
+/* Icon Sizing (Keep this section) */
 .socials a img {
-  width: 24px;
-  height: 24px;
+  width: 20px; /* Slightly reduced icon size */
+  height: 20px;
   transition: filter 0.3s;
 }
 
-.socials a:hover img {
-  filter: brightness(0) saturate(100%) invert(55%) sepia(84%) saturate(431%) hue-rotate(130deg) brightness(95%) contrast(90%);
-}
-
-/* Location */
-/*.footer-location {
-  margin: 0.5rem 0;
+/* --- Location Styling --- */
+.footer-location {
+  /* Kept display flex to ensure icon and text align */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin: 0.3rem 0; 
+  font-size: 0.95rem; /* Ensure location text is readable */
 }
 
+.footer-location p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+
+/* Updated to target the <i> tag using the .footer-icon class */
 .footer-location .footer-icon {
-  width: 18px;
-  height: 18px;
+  /* Set the size using font size, which is how FA icons are sized */
+  font-size: 16px; 
+  /* Removed width/height as they are now text/font elements */
 }
-
-/* Footer Links */
-/*footer a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: var(--accent);
-}*/
-
-footer {
-  background: var(--primary);
-  color: #fff;
-  padding: 1rem 1rem;
-  text-align: center;
-}
-
-footer .socials a {
-  color: #fff;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-footer .socials a:hover {
-  color: var(--accent);
-}
-
 /* ---------- Smooth scrolling ---------- */
 html {
   scroll-behavior: smooth;
 }
 
 /* ---------- Media Queries ---------- */
+
+/* --- NEW MEDIA QUERY FOR VERY SMALL PHONES (Updated padding) --- */
+@media (max-width: 600px) {
+    
+    /* Ensure Header stacks neatly */
+    header {
+        padding: 1rem 0.5rem; /* Less horizontal padding */
+        flex-direction: column; 
+    }
+
+    header .logo {
+        margin-bottom: 0.75rem; 
+    }
+    
+    nav {
+        justify-content: center; 
+    }
+    
+    nav a {
+        margin: 0 0.4rem; 
+        font-size: 0.9rem; 
+    }
+    
+    /* FIX: Reduce side padding on main sections for narrow screens */
+    .hero {
+        padding: 6rem 0.5rem; 
+    }
+    
+    section {
+        padding: 3rem 0.5rem;
+    }
+}
+
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 3rem;
