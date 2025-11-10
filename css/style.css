@@ -171,6 +171,55 @@ h2 {
   font-size: 1rem;
 }
 
+/* PARTNERS SECTION STYLES */
+.partners-section {
+    padding: 60px 20px;
+    background-color: #eef1f6;
+    text-align: center;
+}
+
+.partners-section h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.partner-logos {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.partner-item {
+    padding: 15px 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.partner-item:hover {
+    transform: translateY(-5px);
+}
+
+.partner-item img {
+    /* Sets the size for the logos */
+    max-width: 150px; 
+    height: 80px;
+    object-fit: contain; 
+    display: block;
+}
+
+.partners-section .intro {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
 /* ---------- Testimonials ---------- */
 .testimonial-grid {
   display: grid;
@@ -197,6 +246,92 @@ h2 {
   margin: 0.5rem 0;
   font-size: 1rem;
 }
+
+/* ---------- FAQ / Accordion ---------- */
+.faq {
+  padding: 3rem 1rem;
+  background: #fff;
+}
+
+.faq .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+/* accordion */
+.accordion {
+  display: grid;
+  gap: 1rem;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--light);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* the button that toggles */
+.accordion-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-toggle:focus {
+  outline: 3px solid rgba(0, 51, 102, 0.15);
+  outline-offset: 2px;
+}
+
+/* caret icon */
+.accordion-toggle .caret {
+  transition: transform 0.25s ease;
+  color: var(--primary);
+}
+
+/* panel content */
+.accordion-panel {
+  padding: 1rem 1.25rem 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  color: var(--text);
+  line-height: 1.6;
+  background: transparent;
+}
+
+/* open state styles (we toggle class with JS) */
+.accordion-item.open .accordion-toggle .caret {
+  transform: rotate(180deg);
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .faq .container {
+    padding: 0 1.5rem;
+  }
+  .accordion-toggle {
+    font-size: 1.05rem;
+  }
+}
+
+
+
 
 /* ---------- Footer ---------- */
 footer {

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAQ | FG FINANCE Cooperative</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+:root {
+  --primary: #003366;
+  --accent: #1db954;
+  --light: #f9fafc;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  /* Using a slightly more generic financial image for FAQ */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1544377193-33923a1a5118?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.intro {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.accordion {
+  max-width: 900px;
+  margin: 50px auto 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #f1f1f1;
+}
+
+.accordion-header::after {
+  content: '+';
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  content: '-';
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.accordion-content p {
+  padding: 15px 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">FG FINANCE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="depaccount.html">Deposit Accounts</a>
+    <a href="credit.html">Credit Facilities</a>
+    <a href="current.html">Current Accounts</a>
+    <a href="adhoc.html">ADHOC Services</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Frequently Asked Questions (FAQ)</h1>
+  <p>Everything you need to know about our operations, membership, and regulatory framework as a Category 1 Credit Union.</p>
+</section>
+
+<section class="intro">
+  <p>
+    Welcome to our FAQ section. Here, you'll find comprehensive answers about how a Category 1 Credit Union operates,
+    our services, member responsibilities, and the regulatory environment under OHADA and COBAC/MINFI.
+  </p>
+</section>
+
+<section class="services">
+  <h2 style="text-align:center;">Category 1 Credit Union Essentials</h2>
+
+  <div class="accordion">
+
+    <div class="accordion-item">
+      <div class="accordion-header">1. What is a Category 1 Credit Union (CAT 1)?</div>
+      <div class="accordion-content">
+        <p>A Category 1 Credit Union is a **member-owned financial cooperative** that mobilizes savings and provides loans **only to its members**. It operates under **COBAC Regulation R-2002/01** and is supervised by the Ministry of Finance (MINFI).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">2. Who can become a member of a Credit Union?</div>
+      <div class="accordion-content">
+        <p>Any person who: **is of legal working age (18+), shares the bond of association** (community, profession, etc.), and **accepts the by-laws**. Membership requires filling a form and paying the registration fee and minimum share capital.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">3. What are the main objectives of a CAT 1 Credit Union?</div>
+      <div class="accordion-content">
+        <p>To **encourage members to save regularly**, **provide affordable loans**, promote financial literacy, and ensure members’ financial inclusion and empowerment.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">4. What services does a Category 1 Credit Union provide?</div>
+      <div class="accordion-content">
+        <p>Services include **Savings accounts** (ordinary, fixed, special), **Loan facilities** (short, medium, long-term, emergency), member education programs, and micro-insurance linkages.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">5. Can non-members deposit or take loans from a CAT 1 Credit Union?</div>
+      <div class="accordion-content">
+        <p>❌ **No**. By regulation, a Category 1 Credit Union deals strictly with its **members only**. Non-members cannot hold accounts or benefit from loans.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">6. What are the eligibility requirements for obtaining a loan?</div>
+      <div class="accordion-content">
+        <p>A member must: be registered for at least **three months** (usually), have a **regular savings record**, maintain a **positive account balance**, provide member **guarantors** in good standing, and demonstrate **repayment capacity**.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">7. What is the difference between savings and shares?</div>
+      <div class="accordion-content">
+        <p>**Savings** are amounts members can generally withdraw. **Shares** represent a member’s permanent ownership contribution, are non-withdrawable, except upon leaving the Credit Union.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">8. How is interest determined on loans and savings?</div>
+      <div class="accordion-content">
+        <p>**Interest on Loans** is set by the Board (typically 1–2.5% per month). **Interest on Savings** (dividends) is declared annually after financial results are approved at the Annual General Meeting (AGM).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">9. How does the Credit Union ensure the safety of members’ money?</div>
+      <div class="accordion-content">
+        <p>Through management by elected committees, **regular internal and external audits**, adherence to **COBAC prudential norms**, cash deposits in approved banks, and **Insurance coverage** (e.g., Loan Protection and Savings Insurance - LPSI).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">10. What are the main governing organs of a Credit Union?</div>
+      <div class="accordion-content">
+        <p>The **General Assembly (GA)** is the supreme body. Others include the **Board of Directors (BOD)** for strategy, the **Supervisory Committee** for internal audit, the **Credit Committee** for loan approval, and the **Management Staff** for day-to-day operations.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">11. How are Credit Union leaders chosen?</div>
+      <div class="accordion-content">
+        <p>All leaders (Board, Supervisory, and Credit Committees) are **elected by members** during the Annual General Meeting (AGM) based on merit, trust, and compliance with the by-laws.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">12. What are the responsibilities of members?</div>
+      <div class="accordion-content">
+        <p>Members must **save regularly**, **repay loans promptly**, attend meetings and participate in elections, respect the rules, and promote mutual assistance.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">13. What happens when a member defaults on a loan?</div>
+      <div class="accordion-content">
+        <p>The Credit Union may deduct funds from the member’s savings/shares. **Guarantors** may be required to pay. Legal recovery measures may follow for persistent defaults, affecting the member's credit reputation.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">14. Can a member withdraw from the Credit Union?</div>
+      <div class="accordion-content">
+        <p>✅ **Yes**. A member can resign by submitting a written notice. The Credit Union will refund the member’s savings and shares (after offsetting any outstanding obligations).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">15. How does a Credit Union generate income?</div>
+      <div class="accordion-content">
+        <p>Main sources include **Loan interest** from members, registration and transaction fees, fines, penalties, and **Investment income** (e.g., fixed deposits).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">16. How are profits (surpluses) shared?</div>
+      <div class="accordion-content">
+        <p>After the annual audit, surpluses are distributed as: **Reserve fund** (minimum 20%), **member dividends on shares**, interest on savings, and contributions to education/social funds.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">17. What is the role of MINFI and COBAC in Credit Union supervision?</div>
+      <div class="accordion-content">
+        <p>**MINFI** (Ministry of Finance) oversees national regulation and licensing. **COBAC** ensures prudential supervision and financial stability of microfinance institutions across CEMAC countries.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">18. How often are Credit Union accounts audited?</div>
+      <div class="accordion-content">
+        <p>**Internally**: At least once every quarter by the Supervisory Committee. **Externally**: Annually, by a certified CAMCCUL or MINFI-approved auditor.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">19. What is the difference between Category 1 and Category 2 institutions?</div>
+      <div class="accordion-content">
+        <p>**Category 1 (CAT 1)**: Deals only with members, operating as a cooperative society. **Category 2 (CAT 2)**: Deals with members and the general public (e.g., microfinance institutions).</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">20. How can a Credit Union grow its membership and capital base?</div>
+      <div class="accordion-content">
+        <p>By organizing financial literacy programs, building trust, offering attractive loan products, establishing community partnerships, and encouraging youth/women’s participation.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">21. What happens if a member dies while owing a loan?</div>
+      <div class="accordion-content">
+        <p>Most Credit Unions are covered by **Loan Protection and Savings Insurance (LPSI)**, which typically **cancels outstanding loans** upon the member’s death and pays a benefit to the designated beneficiary.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">22. How are disputes resolved in the Credit Union?</div>
+      <div class="accordion-content">
+        <p>Minor disputes are settled internally by the Board or Supervisory Committee. Unresolved cases are referred to the Union’s League Office (CAMCCUL) or the local cooperative registrar. Legal disputes may go to Cooperative Tribunals.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">23. What are some best practices for members?</div>
+      <div class="accordion-content">
+        <p>Keep contact details updated, **attend AGMs and participate actively**, encourage others to join, report suspicious activities, and maintain a **strong savings discipline**.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">24. What happens if the Credit Union faces financial difficulties?</div>
+      <div class="accordion-content">
+        <p>The Board notifies CAMCCUL and MINFI. A recovery plan is initiated, potentially involving audits, mergers, or restructuring. Members are kept informed.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">25. How does the Credit Union contribute to community development?</div>
+      <div class="accordion-content">
+        <p>Through its Education Fund and Social Fund, the Credit Union may support members’ children with **scholarships**, fund community health programs, and sponsor economic empowerment initiatives.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 FG FINANCE Cooperative Credit Union</p>
+  <p><a href="index.html">← Back to Home</a></p>
+</footer>
+
+<script>
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+      if (header.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "15px 20px";
+      } else {
+        content.style.maxHeight = null;
+        content.style.padding = "0 20px";
+      }
+    });
+  });
+</script>
+</body>
+</html>

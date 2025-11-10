@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Islamic Microfinance Products | FG FINANCE Cooperative</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+:root {
+  --primary: #003366;
+  --accent: #1db954;
+  --light: #f9fafc;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  /* New background image reflecting Islamic finance */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1541708849540-3f40f09e25d6?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.intro {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+    
+/* ADJUSTMENTS FOR 12 CARDS */
+.comparison-table {
+  display: grid;
+  /* Changed minmax to 200px and added more flexibility for 3 or 4 columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  /* Increased max width to fit more cards comfortably */
+  max-width: 1200px; 
+  margin: 50px auto 80px;
+  padding: 0 20px;
+}
+
+.account-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.account-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.account-card h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.account-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.account-card .icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">FG FINANCE</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="depaccount.html">Deposit Accounts</a>
+    <a href="credit.html">Credit Facilities</a>
+    <a href="current.html">Current Accounts</a>
+    <a href="adhoc.html">ADHOC Services</a>
+    <a href="faq.html">FAQ</a>
+    <a href="islamic_finance.html">Islamic Products</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Islamic Microfinance Products</h1>
+  <p>Explore our Shariah-compliant financing and savings solutions based on risk-sharing, partnership, and ethical transactions, avoiding interest (Riba).</p>
+</section>
+
+<section class="intro">
+  <p>
+    These products offer ethical alternatives to conventional finance, empowering traders, farmers, and entrepreneurs through trade, partnership, and benevolence.
+    All services are guided by Islamic financial principles.
+  </p>
+</section>
+
+<section class="comparison-table">
+  <h2 style="grid-column: 1 / -1; text-align: center; margin-bottom: 0;">Interest-Free Financing Modes</h2>
+  
+  <div class="account-card">
+    <div class="icon">🛒</div>
+    <h3>1. Murabaha</h3>
+    <p>
+      **Cost-Plus Financing:** The MFI buys an asset (goods, equipment) and sells it to the client at cost plus an agreed, fixed profit margin, payable in installments.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🎁</div>
+    <h3>2. Qard Hasan</h3>
+    <p>
+      **Benevolent Loan:** An interest-free loan for social support or small welfare needs. The client repays only the principal amount. Ideal for the poor and vulnerable.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🤝</div>
+    <h3>3. Musharakah</h3>
+    <p>
+      **Partnership:** A joint business venture where the MFI and client contribute capital. **Profit** is shared by pre-agreed ratio; **Loss** is shared based on capital contribution.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">💡</div>
+    <h3>4. Mudarabah</h3>
+    <p>
+      **Trust Financing:** The MFI provides 100% of the capital, and the client manages the business (labor). Profits are shared; MFI bears losses (unless due to negligence).
+    </p>
+  </div>
+  
+  <div class="account-card">
+    <div class="icon">🚗</div>
+    <h3>5. Ijarah</h3>
+    <p>
+      **Islamic Leasing:** The MFI buys an asset (e.g., machinery, taxi) and leases it to the client for a fixed rental. Ownership may transfer at the end of the lease period.
+    </p>
+  </div>
+  
+  <div class="account-card">
+    <div class="icon">🌾</div>
+    <h3>6. Bai Salam</h3>
+    <p>
+      **Advance Purchase:** The MFI pays the full price in advance for specific goods (like farm produce) to be delivered at a future date. Provides farmers with immediate working capital.
+    </p>
+  </div>
+  
+  <div class="account-card">
+    <div class="icon">🏗️</div>
+    <h3>7. Istisna’a</h3>
+    <p>
+      **Manufacturing/Construction:** Financing for assets not yet built (e.g., houses, customized equipment). The MFI pays the manufacturer in stages as work progresses.
+    </p>
+  </div>
+
+  <h2 style="grid-column: 1 / -1; text-align: center; margin-top: 30px; margin-bottom: 0;">Savings, Risk Management & Social Services</h2>
+  
+  <div class="account-card">
+    <div class="icon">🔒</div>
+    <h3>8. Wadia Account</h3>
+    <p>
+      **Safe Custody Savings:** Clients deposit money for safekeeping. The MFI guarantees the return of the principal. No interest is paid, but a voluntary gift (Hibah) may be given.
+    </p>
+  </div>
+  
+  <div class="account-card">
+    <div class="icon">📈</div>
+    <h3>9. Mudarabah Investment</h3>
+    <p>
+      **Investment Savings:** Clients' funds are invested in Shariah-compliant businesses. Profits are shared according to a pre-agreed ratio (no guaranteed return).
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🛡️</div>
+    <h3>10. Takaful</h3>
+    <p>
+      **Islamic Micro-Insurance:** Community-based risk sharing where members contribute to a mutual fund to help cover losses (death, accident). Surplus is shared among participants.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">🤲</div>
+    <h3>11. Zakat & Sadaqah Mgmt</h3>
+    <p>
+      **Charitable Funds Management:** The MFI collects and distributes mandatory (Zakat) and voluntary (Sadaqah) charitable funds to support Qard Hasan, education, or relief efforts.
+    </p>
+  </div>
+
+  <div class="account-card">
+    <div class="icon">👥</div>
+    <h3>12. Halal Njangi</h3>
+    <p>
+      **Group-Based Finance:** Members contribute to a pool which is either rotated or invested in halal businesses. Profits are shared (no interest). Ideal for women and youth groups.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 FG FINANCE Cooperative Credit Union</p>
+  <p><a href="index.html">← Back to Home</a></p>
+</footer>
+</body>
+</html>
